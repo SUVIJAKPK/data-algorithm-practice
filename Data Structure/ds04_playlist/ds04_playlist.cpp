@@ -197,7 +197,6 @@ class list
             me = me->next;
             mm++;
         }
-
         node* cur = mHeader->next;
         size_t i = 0, pos_se = 0;
         node* head = NULL;
@@ -224,7 +223,6 @@ class list
                 i++;
             }
         }
-        
         head->prev = me->prev;
         me->prev->next = head;
         tail->next = me;

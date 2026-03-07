@@ -12,7 +12,6 @@ void CP::stack<T>::mitosis(int a, int b){
         }
         pop();
     }
-
     while(!newStack.empty()){
         push(newStack.top());
         newStack.pop();

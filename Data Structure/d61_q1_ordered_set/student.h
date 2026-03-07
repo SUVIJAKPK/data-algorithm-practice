@@ -9,11 +9,9 @@ vector<T> Union(const vector<T>& A, const vector<T>& B) {
         v.push_back(a);
         seen.insert(a);
     }
-
     for(auto b : B){
         if(!seen.count(b)) v.push_back(b);
     }
-
     return v;
 }
 
@@ -26,3 +24,6 @@ vector<T> Intersect(const vector<T>& A, const vector<T>& B) {
     }
     return v;
 }
+
+
+
